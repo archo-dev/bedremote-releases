@@ -1,0 +1,8 @@
+# OS / editors
+Thumbs.db
+.DS_Store
+*.log
+# never commit keys or local state
+*.pem
+*private*key*
+.env*
