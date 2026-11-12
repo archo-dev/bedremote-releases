@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "app": "BedRemote",
+  "channel": "stable",
+  "version": "3.0.0",
+  "issued": "2026-11-12T10:05:39Z",
+  "notes_fr": "### Applications Windows (nouveau)\n- Sessions multimédias Windows (GlobalSystemMediaTransportControlsSessionManager, liaisons WinRT officielles) : Spotify,\n  Lecteur multimédia, applications de musique/podcasts, navigateurs sans extension. Métadonnées (titre, artiste, album,\n  illustration fournie localement), état, position, et **seulement les commandes annoncées par l'application**.\n- Volume **indépendant par application** (sessions audio Windows du processus, jamais une autre application).\n- VLC : interface web officielle limitée à 127.0.0.1, mot de passe fort, assistant avec accord explicite et sauvegarde de vlcrc.\n- Sélecteur universel de sources (navigateur + Windows), mode automatique stable (pas de bascule intempestive) ou verrouillé ;\n  déduplication navigateur/Windows (l'extension, plus capable, est prioritaire). Minuteur « fin du morceau » pour la musique.\n### V2.1 — fiabilisation\n- Volume vérifié avec nouvelle tentative (corrige Vimeo), reprise vérifiée (corrige Wikimedia/fichiers directs),\n  lecteurs `<audio>`, Media Session (artiste/album), délais de vérification adaptés.\n- Netflix clarifié : limitation de recherche = *précaution technique non testée*, pas un résultat.\n### V2.2 — génériques intelligents\n- Mode A (boutons natifs) conservé ; mode B : chapitres officiels « Intro/Récap » du lecteur ; mode C : plages\n  personnalisées depuis le téléphone (épisode, saison, série), automatiques seulement avec identifiant fiable, sinon\n  proposées avec confirmation ; plusieurs plages (générique + récap).\n- Bibliothèque : 72 profils (32 nouveaux, dont 12 audio), statuts « Partiellement vérifié »/« Testé sur fixtures »…,\n  limitations typées (Confirmé / Précaution technique / Hypothèse), profils personnels `custom_profiles.json` (données uniquement).\n### V2.3 — extensions prêtes pour les boutiques\n- Accès aux sites en **permission facultative** accordée par l'utilisateur (tous les sites ou site par site), scripts\n  enregistrés dynamiquement ; ZIP Chrome et Edge sans clé ; dossier `Publication/` (fiches, justifications, confidentialité,\n  questionnaires, instructions). Aucune publication effectuée.\n- Appairage de l'extension par **secret propre à l'installation + défi HMAC** ; un autre identifiant (boutique) doit être\n  approuvé dans BedRemote.\n### V2.4 — mises à jour sécurisées\n- Manifeste signé Ed25519 (clé publique intégrée, clé privée hors projet), HTTPS uniquement, SHA-256 + taille, anti-retour\n  arrière et anti-rejeu, installation silencieuse, retour automatique à la version précédente en cas d'échec, réglages conservés.\n  Canal non configuré tant qu'aucun hébergement officiel n'existe.\n### Sécurité / appairage\n- Nouveaux téléphones : code d'appairage à usage unique (10 min) dans le fragment de l'URL, jeton par appareil stocké haché,\n  révocable un par un. L'ancien lien permanent reste accepté (désactivable) pour les raccourcis existants.\n### Interfaces\n- Téléphone : sélecteur de sources, modes vidéo / musique / générique, aléatoire/répétition/arrêt si disponibles,\n  générique personnalisé, illustration, paysage, grand texte, mode nuit.\n- Windows : onglets Médias, Génériques, Appareils (téléphones, extensions, approbations), mises à jour, assistant de premier lancement.",
+  "files": [
+    {
+      "kind": "installer",
+      "name": "BedRemote-Setup.exe",
+      "url": "https://archo-dev.github.io/bedremote-releases/updates/files/3.0.0/BedRemote-Setup.exe",
+      "sha256": "0e903ccd0f85b929b86136b988b0c8353f718f6adcaed38b27fa291f62acdd90",
+      "size": 11755637
+    },
+    {
+      "kind": "portable",
+      "name": "BedRemote-Portable.zip",
+      "url": "https://archo-dev.github.io/bedremote-releases/updates/files/3.0.0/BedRemote-Portable.zip",
+      "sha256": "77c49a75b18bd049477a8f825d6deeeb9cc2eb23bb796c528b12a1668e98f9e7",
+      "size": 13532257
+    }
+  ]
+}
