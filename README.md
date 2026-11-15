@@ -12,7 +12,7 @@ Ce dépôt ne contient **pas** le code source de BedRemote. Il sert uniquement �
 |---|---|
 | [BedRemote-Setup.exe](https://github.com/archo-dev/bedremote-releases/releases/download/v3.0.0/BedRemote-Setup.exe) | Installateur Windows. Installation pour l'utilisateur, sans droits administrateur. |
 | [BedRemote-Portable.zip](https://github.com/archo-dev/bedremote-releases/releases/download/v3.0.0/BedRemote-Portable.zip) | Version portable : extraire puis lancer `BedRemote.exe`. |
-| [BedRemote-Chrome-Extension.zip](https://github.com/archo-dev/bedremote-releases/releases/download/v3.0.0/BedRemote-Chrome-Extension.zip) | Extension Chrome, installation manuelle (publication en boutique en attente). |
+| [BedRemote-Chrome-Extension.zip](https://github.com/archo-dev/bedremote-releases/releases/download/v3.0.0/BedRemote-Chrome-Extension.zip) | Extension Chrome, installation manuelle. **Recommandé : [Chrome Web Store](https://chromewebstore.google.com/detail/bedremote-universal/hdcomibojibjfngfgnhdmmfjeogiobjj)**. |
 | [BedRemote-Edge-Extension.zip](https://github.com/archo-dev/bedremote-releases/releases/download/v3.0.0/BedRemote-Edge-Extension.zip) | Même extension pour Edge, installation manuelle. |
 | [SHA256SUMS.txt](https://github.com/archo-dev/bedremote-releases/releases/download/v3.0.0/SHA256SUMS.txt) | Sommes de contrôle SHA-256. |
 
@@ -26,7 +26,10 @@ Vérifier une empreinte dans PowerShell :
 Get-FileHash .\BedRemote-Setup.exe -Algorithm SHA256
 ```
 
-### Extension (installation manuelle, en attendant les boutiques)
+### Extension
+**Chrome :** installe « BedRemote Universal » depuis le [Chrome Web Store](https://chromewebstore.google.com/detail/bedremote-universal/hdcomibojibjfngfgnhdmmfjeogiobjj). Avec BedRemote 3.0.0, approuve-la ensuite une fois : onglet **Appareils** → Extensions de navigateur → sélectionne-la → **Autoriser**.
+
+**Edge (ou installation manuelle) :**
 1. Extraire `BedRemote-Chrome-Extension.zip` dans un dossier que tu conserves.
 2. Ouvrir `chrome://extensions` (ou `edge://extensions`), activer le **mode développeur**.
 3. **Charger l'extension non empaquetée** → choisir le dossier extrait.
@@ -62,4 +65,4 @@ This repository does **not** contain BedRemote's source code. It only distribute
 
 The executables are **not code-signed**, so SmartScreen may warn you. Check the SHA-256 and keep SmartScreen and Defender enabled.
 
-Extensions are installed manually until the store listings are approved: load the extracted folder in developer mode. The app's documentation is in French. Privacy policy: https://bedremote.vercel.app/en/privacy/
+Chrome extension: [Chrome Web Store](https://chromewebstore.google.com/detail/bedremote-universal/hdcomibojibjfngfgnhdmmfjeogiobjj) — with BedRemote 3.0.0, approve it once in the app ("Appareils" tab → "Autoriser"). Edge: load the extracted ZIP in developer mode. The app's documentation is in French. Privacy policy: https://bedremote.vercel.app/en/privacy/
