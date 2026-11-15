@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "app": "BedRemote",
+  "channel": "stable",
+  "version": "3.0.1",
+  "issued": "2026-11-15T11:39:58Z",
+  "notes_fr": "### Distribution publique\n- **Mises à jour automatiques activées** : le canal officiel signé (`https://archo-dev.github.io/bedremote-releases/updates/`)\n  est configuré par défaut. Chaque manifeste est vérifié (signature Ed25519, anti-retour arrière, SHA-256 des fichiers)\n  avant toute installation ; la vérification automatique reste désactivable dans Réglages. Une adresse personnalisée\n  déjà configurée est conservée.\n- **Extension du Chrome Web Store reconnue automatiquement** : l'extension « BedRemote Universal » installée depuis la\n  boutique officielle s'appaire seule, sans approbation dans l'onglet Appareils (l'appairage par secret et la\n  vérification HMAC restent obligatoires).\n- Aucune autre modification fonctionnelle.",
+  "files": [
+    {
+      "kind": "installer",
+      "name": "BedRemote-Setup.exe",
+      "url": "https://archo-dev.github.io/bedremote-releases/updates/files/3.0.1/BedRemote-Setup.exe",
+      "sha256": "4df3e5f26fdc9de8949eb990373d03d8ee9a992ca1b2dea2dcdb03c38a0f82b5",
+      "size": 11754219
+    },
+    {
+      "kind": "portable",
+      "name": "BedRemote-Portable.zip",
+      "url": "https://archo-dev.github.io/bedremote-releases/updates/files/3.0.1/BedRemote-Portable.zip",
+      "sha256": "f72500e87157f0f802f318ed5a298e7c67119680cda3f82e01c2f8ce4ab0a3ae",
+      "size": 13531248
+    }
+  ]
+}
