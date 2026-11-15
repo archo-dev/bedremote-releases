@@ -1,5 +1,16 @@
 # Journal des versions
 
+## 3.0.1 — 2026-11-15
+### Distribution publique
+- **Mises à jour automatiques activées** : le canal officiel signé (`https://archo-dev.github.io/bedremote-releases/updates/`)
+  est configuré par défaut. Chaque manifeste est vérifié (signature Ed25519, anti-retour arrière, SHA-256 des fichiers)
+  avant toute installation ; la vérification automatique reste désactivable dans Réglages. Une adresse personnalisée
+  déjà configurée est conservée.
+- **Extension du Chrome Web Store reconnue automatiquement** : l'extension « BedRemote Universal » installée depuis la
+  boutique officielle s'appaire seule, sans approbation dans l'onglet Appareils (l'appairage par secret et la
+  vérification HMAC restent obligatoires).
+- Aucune autre modification fonctionnelle.
+
 ## 3.0.0 Universal Media Remote — 2026-11-12
 ### Applications Windows (nouveau)
 - Sessions multimédias Windows (GlobalSystemMediaTransportControlsSessionManager, liaisons WinRT officielles) : Spotify,

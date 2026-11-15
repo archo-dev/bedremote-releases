@@ -15,7 +15,7 @@ BedRemote vérifie chaque mise à jour **avant** de l'analyser :
   - toute redirection vers un autre hôte.
 - Le canal est publié sur GitHub Pages : `https://archo-dev.github.io/bedremote-releases/updates/`. Les fichiers sont servis par le même hôte que le manifeste.
 
-BedRemote 3.0.0 n'a pas d'adresse de mise à jour configurée. Le canal sert aux versions suivantes.
+Depuis la version 3.0.1, ce canal est configuré par défaut. La version 3.0.0 n'a pas d'adresse configurée : installe 3.0.1 une fois manuellement.
 
 ## Signaler une vulnérabilité
 Ouvre un ticket **sans détail exploitable** en demandant un contact privé, ou utilise « Report a vulnerability » (GitHub private vulnerability reporting) si le bouton est disponible sur ce dépôt.
